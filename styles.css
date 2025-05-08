@@ -1,113 +1,190 @@
 * {
     margin: 0;
     padding: 0;
-}
-.body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #fefefe;
+  }
+  
+  .container {
     display: flex;
+    flex-direction: column;
+    padding: 40px 120px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 150px;
-    /* height: 100vh; */
-    gap: 30px;
-}
-
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* padding: 30px 0; */
-}
-.nav-links {
+  }
+  
+  .nav-links {
     display: flex;
     gap: 30px;
+  }
+  
+  .nav-links a {
     text-decoration: none;
-}
-.hero {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  
+  .hero {
     display: flex;
     flex-direction: row;
     gap: 30px;
-}
-.web3-hero {
+    flex-wrap: wrap;
+  }
+  
+  /* LEFT SIDE - WEB3 SECTION */
+  .web3-hero {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
-.web3 {
+    gap: 20px;
+    flex: 2;
+  }
+  
+  .web3-hero .image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* TITLE AND READ MORE */
+  .web3 {
     display: flex;
     flex-direction: row;
-
-}
-.title,
-.read-more {
+    gap: 20px;
+  }
+  
+  .title {
     flex: 1;
-}
-.title {
-    display: flex;
-    flex-wrap: wrap;
-    color: #000;
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 900;
-    padding-right: 30px;
-}
-.read-more {
+    color: #000;
+    line-height: 1.2;
+  }
+  
+  .read-more {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.read-more p {
-    color: #000;
-}
-.button {
-    background-color: red;
-    padding: 10px 20px;
-    width: 50%;
+    gap: 20px;
+  }
+  
+  .read-more p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .button {
+    background-color: #f15e50;
+    color: white;
     border: none;
-    color: #000;
-    font-size: 17px;
-    font-weight: 400;
-}
-
-.news {
+    padding: 12px 20px;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  
+  /* RIGHT SIDE - NEWS */
+  .news {
+    flex: 1;
+    background-color: #00001a;
+    color: white;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: #000;
-    padding: 0 20px 0 20px;
-    justify-content: space-around;
-    width: 70%;
-}
-.new-title {
-    color: gold;
-}
-.single-news {
+    gap: 20px;
+  }
+  
+  .new-title {
+    color: #e9ab53;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .single-news {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-}
-.news-title {
-    color: #FFF;
-}
-.news-description {
-    color: #FFF;
-}
-
-.featured-news-container {
+  }
+  
+  .news-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .news-title:hover {
+    color: #e9ab53;
+  }
+  
+  .news-description {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+  }
+  
+  .hr-line {
+    border: 0;
+    border-top: 1px solid #333;
+  }
+  
+  /* FEATURED NEWS */
+  .featured-news-container {
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
     gap: 30px;
-}
-.featured-news {
+    flex-wrap: wrap;
+  }
+  
+  .featured-news {
     display: flex;
     gap: 20px;
-}
-.description {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .featured-news img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+  }
+  
+  .description h3 {
+    font-size: 24px;
+    color: #c5c6ce;
+    font-weight: 700;
+  }
+  
+  .description h2 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #00001a;
+  }
+  
+  .description p {
+    font-size: 13px;
+    color: #7a7a7a;
+  }
+  
